@@ -1,11 +1,18 @@
-/* LAUNCHES */
-//launch date
-//mission name
-//rocket type
-//destination planet
+const launches = new Map();
 
-/* UPCOMING */
-//flight number
+const launch = {
+    flightNumber: 100,
+    mission: 'Kepler Expoloration X',
+    rocket: 'Explorer IS1',
+    launchDate: new Date('December 27, 2030'),
+    destination: 'Kepler-442 b',
+    customers: ['NASA', 'NOAA'],
+    upcoming: true,
+    success: true
+};
 
-/* HISTORY */
-//customers
+launches.set(launch.flightNumber, launch);
+
+module.exports = {
+    launches
+};
